@@ -1,0 +1,42 @@
+body{background-color: bisque;
+}
+header{height: 200px;
+display: inline;}
+header img{width: 200px;
+height: 100px;
+}
+header nav {float: right;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+    color: brown;
+    font-size: 20px;
+}
+section h1{font-size: 40px;
+}
+section h3{font-size: 28px;
+}
+p {
+    line-height: 1.5;
+  }
+main section img{width: 100%;
+height: 400px;
+}
+main section:nth-child(1) p {
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  main section div{padding-top: 20px;}
+main section div p {
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+footer{
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}  
