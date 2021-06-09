@@ -9,7 +9,10 @@ if(juice ==='yes'){
     console.log('your answer is true');
     alert('good job '+userName);
     count++;
-
+}else if (juice ==='no'){
+    console.log('your answer is not true');
+    alert('oops '+userName);
+}else{alert(' your answer should be yes or no');
 }
 
 
@@ -20,6 +23,11 @@ if(tea ==='yes'){
     count++;
 
 }
+else if (tea ==='no'){
+    console.log('your answer is not true');
+    alert('oops '+userName);
+}else{alert(' your answer should be yes or no');
+}
 
 let coffee= prompt('Do you think I like coffee').toLowerCase();
 if(coffee ==='yes'){
@@ -27,20 +35,33 @@ if(coffee ==='yes'){
     alert('good answer '+userName);
     count++;
 
-}
+}else if (coffee ==='no'){
+    console.log('your answer is not true');
+    alert('oops '+userName);
+}else{alert(' your answer should be yes or no')}
+
 let cats= prompt('Do you think I like cats').toLowerCase();
 if(cats ==='yes'){
     console.log('your answer is true');
     alert('wow nice '+userName);
     count++;
-
+}else if (cats ==='no'){
+    console.log('your answer is not true');
+    alert('oops '+userName);
+}else{alert(' your answer should be yes or no');
 }
+
+
 let movies= prompt('Do you think I like movies').toLowerCase();
 if(movies ==='yes'){
         console.log('your answer is true');
         alert('yes  '+userName);
         count++;
 
+}else if (movies ==='no'){
+    console.log('your answer is not true');
+    alert('oops '+userName);
+}else{alert(' your answer should be yes or no');
 }
 
 
@@ -57,11 +78,13 @@ if(age == 23){
 }
 console.log('your scor is '+count);
 let answer =['coffe','jem','see food','cars','my pc','video games'];
-let userAnser = prompt('What do you think I like more of these options?'+answer).toLowerCase();
+let userAnser;
 do{
-   userAnser = prompt('no try again '+answer).toLowerCase();
+    userAnser = prompt('What do you think I like more of these options?'+answer).toLowerCase();
+   
 }
  while(userAnser !== answer[0]);
+alert('You have answered all the questions, welcome our web site');
 
 // for(let i=0 ;i<answer.length;i++){
   //   if(userAnser === answer[0]){
