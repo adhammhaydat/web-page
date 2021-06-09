@@ -9,10 +9,13 @@ if(juice ==='yes' ||juice ==='y'){
     console.log('your answer is true');
     alert('good job '+userName);
     count++;
+    
 }else if (juice ==='no'||juice === 'n'){
     console.log('your answer is not true');
     alert('oops '+userName);
+    allAnswer[0]=juice;
 }else{alert(' your answer should be yes or no');
+
 }
 
 
@@ -38,7 +41,9 @@ if(coffee ==='yes' || coffee ==='y'){
 }else if (coffee ==='no' || coffee ==='n'){
     console.log('your answer is not true');
     alert('oops '+userName);
-}else{alert(' your answer should be yes or no')}
+}else{alert(' your answer should be yes or no');
+allAnswer[2]=coffee;
+}
 
 let cats= prompt('Do you think I like cats').toLowerCase();
 if(cats ==='yes'||cats ==='y'){
@@ -87,14 +92,18 @@ let userAnser;
 do{
     userAnser = prompt('What do you think I like more of these options?'+answer).toLowerCase();
     numChoose++; 
+    
     if(numChoose >=6){
-        alert('sory,but your answe not correct and Your attempts are over')
-    }  
+        alert('sory,but your answe not correct and Your attempts are over');
+    }
+    
 }
  while(userAnser !== answer[0] && numChoose !=6);
-
+ if(userAnser === answer[0]){
+    count++;
+    
+}
  
-
 alert('You have answered all the questions, welcome our web site');
 alert('your scor is '+count);
 console.log('your scor is '+count);
