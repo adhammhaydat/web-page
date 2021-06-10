@@ -109,33 +109,21 @@ userAnswer(
 // }else{alert(' your answer should be yes or no');
 // }
 
-function myStuff(guess, trials, correc, wron) {
-  let age = parseInt(prompt(guess));
-  while (age !== 23 && trials !== 0) {
-    age = prompt(
-      'try again!! you have ' +
-        trials +
-        ' Attempts. now choose the correct answer '
-    );
-    trials--;
-  }
-  if (age === 23) {
-    console.log(correc);
-    alert(correc);
-    userScore++;
-  } else {
-    alert(wron);
-  }
-
+let oppertunits = 4;
+let age = prompt('what is my age? choose the correct answer from {20 ,21 ,22 ,23 ,24 }');
+age =parseInt(age);
+while(age != 23 && oppertunits != 0){
+    age = prompt('try again!! you have '+oppertunits+' oppertunits.now choose the correct answer from {20 ,21 ,22 ,23 ,24 }')
+    oppertunits--;
 }
-myStuff(
-  'what is my age? choose the correct answer between [20-24]',
-  4,
-  'Right. Well done',
-  'you have no more attempts'
-);
 
-let numChoose =0;
+if(age == 23){
+    console.log('Right. Well done');
+    alert('Right. Well done');
+    userScore++;
+  }else{alert('sory,but your answe not correct and Your attempts are over ');}
+alert('The correct answer is 23 years');
+  let numChoose =0;
 let answer =['coffe',' jem ',' see food ',' cars ',' my pc ',' video games'];
 let userAnser;
 do{
@@ -155,4 +143,5 @@ if(userAnser === answer[0]){
 alert('You have answered all the questions, welcome our web site');
 alert(`yoooo ${userName}, your score is ${userScore}`);
 console.log('your scor is '+userScore);
+
 
