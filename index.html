@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="">
+
     <nav>
         <ul>
         <li><a href=""> Home   </a></li>
@@ -20,48 +20,53 @@
         <li><a href=""> contact us</a></li>  
         </ul>
     </nav>
-</header> 
+</header>
+ 
 <main>
-    <section>
-        <h1>welcome in our page</h1>
+    <div>
+        <img style="width:100% ;height: 600px;" src="./image/2.jpg" alt="image">
+    </div>
+    <section style="display:flexbox;align-content: center;margin-top: 20px;">
+        <div style="text-align:center ;" >
+            <img style="width: 200px;height: 200px;border-radius: 15ex;" src="./image/newphoto.jpg" alt="">
+        </div>    
+        <h1 class="heder1">Adham Mhaydat</h1>
        <!-- <p>This page contain some information about me </p> -->
 
     </section>
-        
-     <div>   
-    <section>
-        <!--<img src="https://www.askideas.com/media/13/Welcome-Design-Picture.jpg" alt="image"> -->
+    <section style="margin-top: 50px;width: 100%;position: relative;" >
 
-    </section>
-    <section>
-        <h1>About Me</h1>
-        <p style="text-indent: 2rem;">My name is Adham Mhaydat, I was born in Jordan, I am 23 years old and i live in Irbid,
-        </p>
-        <p>A software engineering graduate, I've worked before in a team as a web developer, which gave me the 
-            experience to work in HTML, CSS, JavaScript, Python and Django, which allows me in turn to able to 
-            work in websites development</p>
-        <div>
- </main>        
-           <h3> Education</h3>
-            <ul>    
+        <div style="text-align:justify;width: 700px;padding-left: 330px;">    
+        
+            <h1 class="heder2">About Me</h1>
+            <p >My name is Adham Mhaydat,
+                 I was born in Jordan, I am 23 years old and i live in Irbid,
+                A software engineering graduate, I've worked before in a team as a web developer,
+                which gave me the 
+                experience to work in HTML, CSS, JavaScript, Python and Django, 
+                which allows me in turn to able to 
+                work in websites development</p>
+            </br>
+            <h3 class="heder3"> Education:</h3>
+            <ul class="unorderlest">    
                 <li>                       
-                 2016-2020
+                 [2016-2020]
                 BACHELOR OF SOFTWARE ENGINEERING, AL-HUSSEIN BIN TALAL UNIVERSITY, 
                 MA'AN
                 </li>
                     
                 
-                <li> 23/5/2021-23/11/2021
+                <li> [23/5/2021-23/11/2021]
                  SOFTWARE DEVELOPMENT, LUMINUS TECHNICAL UNIVERSITY COLLEGE
                  </li>
              </ul>
-             <h3>experience:</h3>
-            <ul> 
-                <li> I am trainning as a full-stack developer in the asac/LTUC college</li> 
-            </ul>
+             <h3 class="heder3">Experience:</h3>
+            <def class="expDef"> 
+                <dfn> I am trainning as a full-stack developer in the asac/LTUC college</dfn> 
+            </def>
         
-            <h3>Top ten things I love it</h3>
-            <ol>
+            <h3 class="heder3">Top ten things I love it:</h3>
+            <ol class="orderd">
                 <li>coffe</li>
                 <li>cars</li>
                 <li>cats</li>
@@ -74,13 +79,54 @@
                 <li>my pc</li>
             
             </ol>
+    
+        <div>
+        </section>       
+ </main> 
+ <div class="contaner ">       
+    <div class="row ">
+        <div class="column box">
+          <img src="./image/3.jpg" alt="Snow" style="width:100%">
         </div>
-    </section>
+        <div class="column box">
+          <img src="./image/4.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column box">
+          <img src="./image/5.jpg" alt="Mountains" style="width:100%;height: 440px;">
+        </div>
+      </div>
 </div>
 
 
 <footer>
-this page is &copy; Adham
+    <h1 class="heder1">Contact</h1>
+    <div class="contact">
+    <div>
+        <div class="column" style="text-align: justify;">
+        <p>Phone number: 00962775746043</p>
+        <p>E-mail: adhammohidat123@gmail.com</p>
+        </div>
+        
+        <div>
+            <form>
+              <table> 
+                  <tr>
+                     <td><input class="input" type="text" name="firset name"  placeholder="Name"/>
+                    <input class="input" type="text" name="email" placeholder="Your E-mail"/></td>
+                    </tr> 
+                  <tr> 
+                    <td><input class="input2" type="text" name="message" placeholder="Message"/></td>
+                </tr> 
+                <tr>
+                    <td>
+                     <input class="submit" type="submit" value="Submit">
+                    </td>
+                </tr>
+             </table>
+            </form>
+        </div>
+    </div>
+</div>
 </footer>
   
 </body>

@@ -1,4 +1,5 @@
-
+body{margin: 0px;
+  background-color:whitesmoke;}
 
 header{
 width: 100%;  
@@ -13,12 +14,13 @@ border: rgb(168, 45, 45);
 header img{width: 100px;
 height: 50px;
 }
-header nav {float: right;
+header nav {float: left;
 }
 
 header nav ul li { 
     display: inline-block;
     padding: 10px;
+    padding-right:40px ;
    
 }
 header nav ul li a{ 
@@ -30,47 +32,120 @@ a:hover{
 color: antiquewhite;
 }  
 main {
-  padding: 10px;
-  background-color: #faf3f3;
-  margin-top: 50px;
+
+ 
+  margin-top: 40px;
   width: 100%;
   
 }
 
-section h1{font-size: 40px;
+.heder1{
+  font-size: 40px;
   text-align: center;
+  margin: 10px;
+}
+.heder2{
+  color: rgb(105, 102, 102);
+  text-shadow: 2px 2px rgb(14, 13, 13);
+  font-size: 40px;
+  padding-left: 10px;
+  
+  text-align: center;
+}
+.heder3{
+
+  color: rgb(15, 15, 15);
+  text-shadow: 1px 1px rgb(14, 13, 13);
+  font-size: 30px;
+  padding-left: 10px;
+  margin-top:20px;
+}
+.expDef{
+  margin: 10px;
+  padding-left: 30px;
+  font-size: 15px;
 }
 section h3{font-size: 28px;
 }
 p{
   line-height: 1.5;
 }
-  
-main section img{width: 100%;
-height: 400px;
-}
-section:nth-child(1) p {
+.contaner{
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px; ;
+}  
+
+
+.unorderlest{
     margin-bottom: 5px;
-    font-size: 20px;
-    padding-left: 5px;
-  }
-section div {padding-bottom: 20px;
-    margin: 10px;
-}
-section div ul li {
-    margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 20px;
     list-style: inside;
-  }
- section div ol{
+}
+.orderd{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 30px;
     list-style: decimal;
   }
+  .box{
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 footer{
+    
     padding: 30px;
     text-align: center;
     font-size: 25px;
+    height: 300px;
 }  
+.input{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 200px;
+  height: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input2{
+  margin-top: 10px;
+  width: 433px;
+  height: 30px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.submit{
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: green;
+}
+input[type=submit]:hover {
+  
+  background-color: #45a049;
+  cursor: pointer;
+}
+.contact{
+  margin-top: 50px;
+  padding-left: 120px;
+}
